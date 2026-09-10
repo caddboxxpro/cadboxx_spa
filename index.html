@@ -146,11 +146,11 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 <a-scene debug="true" stats="true" loading-screen="enabled:false" physics="gravity:-10; restitution:0.5;friction:0.1">
 
 
-  <a-entity id="box1" geometry="primitive:box" material="color:#4cc3d9" position="-1 1 -4" rotation="0 0 0" scale="2 2 2" dynamic-body ></a-entity>
-  <a-entity id="box2" geometry="primitive:box" material="color:#ef2d5e" position="1 1 -4" rotation="0 0 0" scale="2 2 2" dynamic-body ></a-entity>
+  <a-entity id="box1" geometry="primitive:box" material="color:#4cc3d9" position="-2 4 -4" rotation="0 0 0" scale="2 2 2" dynamic-body ></a-entity>
+  <a-entity id="box2" geometry="primitive:box" material="color:#ef2d5e" position="2 3 4" rotation="0 0 0" scale="2 2 2" dynamic-body ></a-entity>
+    
   
-  
-  <a-plane rotation="-90 0 0" width="20" height="20" color="#777"></a-plane>
+  <a-plane rotation="-90 0 0" width="20" height="20" color="#777" static-body ></a-plane>
   <a-sky color="#65a9e8"></a-sky>
 </a-scene>
 <script>
