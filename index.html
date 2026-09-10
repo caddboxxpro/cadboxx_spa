@@ -241,7 +241,31 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
                 </a-box>
             </a-entity>
         </a-entity>
-  
+    
+  <!-- Camera + cursor. -->
+			<a-entity id="cameraRig" position="0 1.6 0" active="false">
+				<a-camera look-controls wasd-controls position="0 0 0">
+					<a-gui-cursor id="cursor"
+							  raycaster="objects: [gui-interactable]"
+							  fuse="false"
+					>
+					</a-gui-cursor> <!-- /cursor -->
+				</a-camera> <!-- /camera -->
+			</a-entity>
+			<!-- Camera + cursor. -->
+			<a-entity id="cameraRig" position="0 1.6 0" active="true" >
+				<a-camera look-controls wasd-controls position="0 0 0">
+					<a-gui-cursor id="cursor"
+							  raycaster="objects: [gui-interactable]"
+							  fuse="true" fuse-timeout="2000"
+							  color="#ECEFF1"
+							  hover-color="#CFD8DC"
+							  active-color="#607D8B"
+							  design="ring" > <!-- dot, ring, reticle, cross  -->
+					</a-gui-cursor> <!-- /cursor -->
+				</a-camera> <!-- /camera -->
+			</a-entity>		
+    
   <a-plane rotation="-90 0 0" width="20" height="20" color="#777" static-body ></a-plane>
   <a-sky color="#65a9e8"></a-sky>
 </a-scene>
