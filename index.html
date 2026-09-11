@@ -5,8 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <script src="https://unpkg.com/aframe-touch-inspector@1.1.2/dist/aframe-inspector.min.js"></script>
-    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> 
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> 
 
+
+
+
+
+	
 <style>
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 #cadboxxMenus{position:fixed;left:10px;bottom:175px;z-index:100000}
@@ -42,11 +47,11 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 </head>
 <div id="cadboxxMenus">
   <div id="menuSelectors">
-    <button id="menuCreate" style="background:#d32f2f" onclick="showSubMenu('subCreate')">CREATE</button>
-    <button id="menuEdit" style="background:#1976d2" onclick="showSubMenu('subEdit')">EDIT</button>
-    <button id="menuConstrain" style="background:#388e3c" onclick="showSubMenu('subConstrain')">CONSTRAIN</button>
-    <button id="menuAssembly" style="background:#7b1fa2" onclick="showSubMenu('subAssembly')">ASSEMBLY</button>
-    <button id="menuView" style="background:#f57c00" onclick="showSubMenu('subView')">VIEW</button>
+    <button id="menuCreate" style="background:#d32f2f" onclick="showSubMenu('subCreate')">SCENE</button>
+    <button id="menuEdit" style="background:#1976d2" onclick="showSubMenu('subEdit')">MODELS</button>
+    <button id="menuConstrain" style="background:#388e3c" onclick="showSubMenu('subConstrain')">JOINTS</button>
+    <button id="menuAssembly" style="background:#7b1fa2" onclick="showSubMenu('subAssembly')">MOTION</button>
+    <button id="menuView" style="background:#f57c00" onclick="showSubMenu('subView')">PROPERTIES</button>
     <button id="menuSimulate" style="background:#00838f" onclick="showSubMenu('subSimulate')">SIMULATE</button>
   </div>
   <div id="subMenus">
