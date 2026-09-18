@@ -6,12 +6,6 @@
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <script src="https://unpkg.com/aframe-touch-inspector@1.1.2/dist/aframe-inspector.min.js"></script>
 <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> 
-
-
-
-
-
-	
 <style>
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 #cadboxxMenus{position:fixed;left:10px;bottom:175px;z-index:100000}
@@ -47,7 +41,7 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 </head>
 <div id="cadboxxMenus">
   <div id="menuSelectors">
-    <button id="menuCreate" style="background:#d32f2f" onclick="showSubMenu('subCreate')">SCENE</button>
+    <button id="menuCreate" style="background:#d32f2f" onclick="showSubMenu('subCreate')">SCENES</button>
     <button id="menuEdit" style="background:#1976d2" onclick="showSubMenu('subEdit')">MODELS</button>
     <button id="menuConstrain" style="background:#388e3c" onclick="showSubMenu('subConstrain')">JOINTS</button>
     <button id="menuAssembly" style="background:#7b1fa2" onclick="showSubMenu('subAssembly')">MOTION</button>
@@ -56,7 +50,7 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
   </div>
   <div id="subMenus">
     <div id="subCreate" class="subMenu" style="--menu-color:#d32f2f">
-      <button onclick="showCommandSet('commandSetCreate')">CREATE 1</button><button onclick="showCommandSet('commandSetEdit')">CREATE 2</button><button onclick="showCommandSet('commandSetConstrain')">CREATE 3</button><button onclick="showCommandSet('commandSetAssembly')">CREATE 4</button><button onclick="showCommandSet('commandSetView')">CREATE 5</button><button onclick="showCommandSet('commandSetSimulate')">CREATE 6</button>
+      <button onclick="showCommandSet('commandSetCreate')">SCENE 1</button><button onclick="showCommandSet('commandSetEdit')">SCENE 2</button><button onclick="showCommandSet('commandSetConstrain')">SCENE 3</button><button onclick="showCommandSet('commandSetAssembly')">SCENE 4</button><button onclick="showCommandSet('commandSetView')">SCENE 5</button><button onclick="showCommandSet('commandSetSimulate')">SCENE 6</button>
     </div>
     <div id="subEdit" class="subMenu" style="--menu-color:#1976d2">
       <button onclick="showCommandSet('commandSetCreate')">EDIT 1</button><button onclick="showCommandSet('commandSetEdit')">EDIT 2</button><button onclick="showCommandSet('commandSetConstrain')">EDIT 3</button><button onclick="showCommandSet('commandSetAssembly')">EDIT 4</button><button onclick="showCommandSet('commandSetView')">EDIT 5</button><button onclick="showCommandSet('commandSetSimulate')">EDIT 6</button>
