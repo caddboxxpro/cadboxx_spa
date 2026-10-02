@@ -241,7 +241,8 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
             </a-entity>
         </a-entity>
     
-  
+        <a-entity camera target="0 0 0" look-controls wasd-controls position="0 16 10"></a-entity>
+
     
   <!--a-plane rotation="-90 0 0" width="20" height="20" color="#777" static-body ></a-plane-->
   <a-sky color="#65a9e8"></a-sky>
@@ -358,4 +359,18 @@ function simulateStop() { /* STOP CODE HERE */ }
 
 
 
+head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
 
+      <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+
+    </a-scene>
+  </body>
