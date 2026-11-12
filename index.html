@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <script src="https://unpkg.com/aframe-touch-inspector@1.1.2/dist/aframe-inspector.min.js"></script>
-<style>
+
+	
+	<style>
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 #cadboxxMenus{position:fixed;left:10px;bottom:175px;z-index:100000}
 #menuSelectors,.subMenu{display:flex;flex-direction:column;gap:3px}
@@ -21,8 +23,12 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
 #externalLinks a{width:78px;height:45px;padding:0;border:1px solid rgba(255,255,255,.35);border-radius:4px;background:rgba(45,45,45,.72);color:#ddd;font:bold 12px Arial,sans-serif;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25)}
 #externalLinks a:hover{background:rgba(65,65,65,.82)}
 </style>
+
+	
 </head>
 <body>
+
+	
 <div id="cadboxxMenus">
   <div id="menuSelectors">
     <button id="menuCreate" style="background:#d32f2f" onclick="showSubMenu('subCreate')">CREATE</button>
@@ -34,16 +40,16 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
   </div>
   <div id="subMenus">
     <div id="subCreate" class="subMenu" style="--menu-color:#d32f2f">
-      <button onclick="showCommandSet('commandSetCreate1')">CREATE 1</button><button onclick="showCommandSet('commandSetEdit')">CREATE 2</button><button onclick="showCommandSet('commandSetConstrain')">CREATE 3</button><button onclick="showCommandSet('commandSetAssembly')">CREATE 4</button><button onclick="showCommandSet('commandSetView')">CREATE 5</button><button onclick="showCommandSet('commandSetSimulate')">CREATE 6</button>
+      <button onclick="showCommandSet('commandSetCreate1')">CREATE 1</button><button onclick="showCommandSet('commandSetCreate2')">CREATE 2</button><button onclick="showCommandSet('commandSetCreate3')">CREATE 3</button><button onclick="showCommandSet('commandSetCreate4')">CREATE 4</button><button onclick="showCommandSet('commandSetCreate5')">CREATE 5</button><button onclick="showCommandSet('commandSetCreate6')">CREATE 6</button>
     </div>
     <div id="subEdit" class="subMenu" style="--menu-color:#1976d2">
-      <button onclick="showCommandSet('commandSetEdit1')">EDIT 1</button><button onclick="showCommandSet('commandSetEdit')">EDIT 2</button><button onclick="showCommandSet('commandSetConstrain')">EDIT 3</button><button onclick="showCommandSet('commandSetAssembly')">EDIT 4</button><button onclick="showCommandSet('commandSetView')">EDIT 5</button><button onclick="showCommandSet('commandSetSimulate')">EDIT 6</button>
+      <button onclick="showCommandSet('commandSetEdit1')">EDIT 1</button><button onclick="showCommandSet('commandSetEdit2')">EDIT 2</button><button onclick="showCommandSet('commandSetEdit3')">EDIT 3</button><button onclick="showCommandSet('commandSetEdit4')">EDIT 4</button><button onclick="showCommandSet('commandSetEsdit5')">EDIT 5</button><button onclick="showCommandSet('commandSetEdit6')">EDIT 6</button>
     </div>
     <div id="subConstrain" class="subMenu" style="--menu-color:#388e3c">
-      <button onclick="showCommandSet('commandSetConstrain1')">CONSTRAIN 1</button><button onclick="showCommandSet('commandSetEdit')">CONSTRAIN 2</button><button onclick="showCommandSet('commandSetConstrain')">CONSTRAIN 3</button><button onclick="showCommandSet('commandSetAssembly')">CONSTRAIN 4</button><button onclick="showCommandSet('commandSetView')">CONSTRAIN 5</button><button onclick="showCommandSet('commandSetSimulate')">CONSTRAIN 6</button>
+      <button onclick="showCommandSet('commandSetConstrain1')">CONSTRAIN 1</button><button onclick="showCommandSet('commandSetConstrain2')">CONSTRAIN 2</button><button onclick="showCommandSet('commandSetConstrain3')">CONSTRAIN 3</button><button onclick="showCommandSet('commandSetConstrain4')">CONSTRAIN 4</button><button onclick="showCommandSet('commandSetConstrain5')">CONSTRAIN 5</button><button onclick="showCommandSet('commandSetConstrain6')">CONSTRAIN 6</button>
     </div>
     <div id="subAssembly" class="subMenu" style="--menu-color:#7b1fa2">
-      <button onclick="showCommandSet('commandSetAssembly1')">ASSEMBLY 1</button><button onclick="showCommandSet('commandSetEdit')">ASSEMBLY 2</button><button onclick="showCommandSet('commandSetConstrain')">ASSEMBLY 3</button><button onclick="showCommandSet('commandSetAssembly')">ASSEMBLY 4</button><button onclick="showCommandSet('commandSetView')">ASSEMBLY 5</button><button onclick="showCommandSet('commandSetSimulate')">ASSEMBLY 6</button>
+      <button onclick="showCommandSet('commandSetAssembly1')">ASSEMBLY 1</button><button onclick="showCommandSet('commandSetAssembly2')">ASSEMBLY 2</button><button onclick="showCommandSet('commandSetAssembly3')">ASSEMBLY 3</button><button onclick="showCommandSet('commandSetAssembly4')">ASSEMBLY 4</button><button onclick="showCommandSet('commandSetAssembly5')">ASSEMBLY 5</button><button onclick="showCommandSet('commandSetAssembly6')">ASSEMBLY 6</button>
     </div>
     <div id="subView" class="subMenu" style="--menu-color:#f57c00">
       <button onclick="showCommandSet('commandSetView1')">VIEW 1</button><button onclick="showCommandSet('commandSetEdit')">VIEW 2</button><button onclick="showCommandSet('commandSetConstrain')">VIEW 3</button><button onclick="showCommandSet('commandSetAssembly')">VIEW 4</button><button onclick="showCommandSet('commandSetView')">VIEW 5</button><button onclick="showCommandSet('commandSetSimulate')">VIEW 6</button>
