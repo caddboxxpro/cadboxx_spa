@@ -55,18 +55,18 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
       <button onclick="showCommandSet('commandSetView1')">VIEW 1</button><button onclick="showCommandSet('commandSetEdit')">VIEW 2</button><button onclick="showCommandSet('commandSetConstrain')">VIEW 3</button><button onclick="showCommandSet('commandSetAssembly')">VIEW 4</button><button onclick="showCommandSet('commandSetView')">VIEW 5</button><button onclick="showCommandSet('commandSetSimulate')">VIEW 6</button>
     </div>
     <div id="subSimulate" class="subMenu" style="--menu-color:#00838f">
-      <button onclick="showCommandSet('commandSetCreate')">SIMULATE 1</button><button onclick="showCommandSet('commandSetEdit')">SIMULATE 2</button><button onclick="showCommandSet('commandSetConstrain')">SIMULATE 3</button><button onclick="showCommandSet('commandSetAssembly')">SIMULATE 4</button><button onclick="showCommandSet('commandSetView')">SIMULATE 5</button><button onclick="showCommandSet('commandSetSimulate')">SIMULATE 6</button>
+      <button onclick="showCommandSet('commandSetMotion1')">MOTION 1</button><button onclick="showCommandSet('commandSetMotion2')">MOTION 2</button><button onclick="showCommandSet('commandSetMotion3')">MOTION 3</button><button onclick="showCommandSet('commandSetMotion4')">MOTION 4</button><button onclick="showCommandSet('commandSetMotion5')">MOTION 5</button><button onclick="showCommandSet('commandSetSimulate')">SIMULATE 6</button>
     </div>
   </div>
 </div>
 
 <div id="commandSets">
-  <div id="commandSetCreate" class="commandSet" style="--menu-color:#d32f2f">
-    <button id="createAddPart" onclick="cadCommand('createAddPart')">ADD PART</button>
-    <button id="createImport" onclick="cadCommand('createImport')">IMPORT</button>
-    <button id="createDraw" onclick="cadCommand('createDraw')">DRAW</button>
-    <button id="createExtrude" onclick="cadCommand('createExtrude')">EXTRUDE</button>
-    <button id="createFinish" onclick="cadCommand('createFinish')">FINISH</button>
+  <div id="commandSetCreate1" class="commandSet" style="--menu-color:#d32f2f">
+    <button id="create" onclick="cadCommand('create')">cmd one</button>
+    <button id="create" onclick="cadCommand('create')">cmd two</button>
+    <button id="create" onclick="cadCommand('create')">cmd three</button>
+    <button id="create" onclick="cadCommand('create')">cmd four</button>
+    <button id="create" onclick="cadCommand('create')">cmd five</button>
     <button id="createHome" class="home" onclick="showHome('createHome')">HOME</button>
   </div>
 
